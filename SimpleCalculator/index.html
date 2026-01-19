@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <p id="display">0</p>
+            </div>
+
+            <div class="buttons">
+                <ul class="nums">
+                    <li onclick="useNums(7)">7</li>
+                    <li onclick="useNums(8)">8</li>
+                    <li onclick="useNums(9)">9</li>
+                    <li onclick="useNums(4)">4</li>
+                    <li onclick="useNums(5)">5</li>
+                    <li onclick="useNums(6)">6</li>
+                    <li onclick="useNums(1)">1</li>
+                    <li onclick="useNums(2)">2</li>
+                    <li onclick="useNums(3)">3</li>
+                    <li id="clear" 
+                        style="background: red;
+                            color: white;">
+                            C
+                    </li>
+                    <li onclick="useNums(0)">0</li>
+                    <li id=".">.</li>
+                </ul>
+                <ul class="operations">
+                    <li id="sign" style="background: darkgray;">+/-</li>
+                    <li id="backspace" style="background: darkgray;">←</li>
+                    <li id="multiply" style="background: #7F7F7F;">x</li>
+                    <li id="divide" style="background: #7F7F7F;">÷</li>
+                    <li id="subtract" style="background: #7F7F7F;">-</li>
+                    <li id="add" style="background: #7F7F7F;">+</li>
+                    <li id="equal" class="equals">=</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
