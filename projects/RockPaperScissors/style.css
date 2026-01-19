@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+    .options img{
+        width: 100px;
+        border-radius: 100%;
+        background-color: rgba(56, 56, 224, 0.603);
+        cursor: pointer;
+        transition: transform 0.25s ease;
+    }
+        .options img:hover{
+            transform: scale(1.1);
+        }
+
+.output{
+    margin-top: 2rem;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+    .output .names{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+    .output .pick{
+        font-size: 1.1rem;
+        color: rgb(77, 77, 77);
+        margin: 0px;
+    }
+
+.leaderboards{
+    display: table;
+    border-collapse: collapse;
+}
+    .leaderboards .row{
+        display: table-row;
+    }
+    .leaderboards p{
+        display: table-cell;
+        border: 1px solid black; /* Optional: adds borders like a real table */
+        padding: 0.6rem 1rem; /* Optional: adds spacing within cells */
+        vertical-align: top;
+        text-align: start;
+    }
+
+.chosed{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.won{
+    color: yellow;
+    animation: infinite 1s winAnim ease-out;
+}
+
+.lose{
+    color: darkslategray;
+    animation:backwards infinite 2s lose ease-out;
+}
+
+.tied{
+    color: rgb(115, 115, 245);
+}
+
+@keyframes winAnim{
+    0%{
+        transform:scale(1)
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes lose{
+    100%{
+        transform:translateY(1.5rem)
+    }
+}
+
+.reset{
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+}

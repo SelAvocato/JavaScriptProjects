@@ -1,0 +1,19 @@
+body{
+    background: url("https://images.unsplash.com/photo-1531558506007-fe311a2f4729?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2t5c2NyYXBlcnxlbnwwfHwwfHx8MA%3D%3D") no-repeat 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: arial;
+}
+
+.clock-container{
+    font-size: 100px;
+    margin-top: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(1.5px);
+}
+#clock{
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 15px black;
+}

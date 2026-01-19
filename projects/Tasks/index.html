@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="actions">
+        <button id="showForm">Add Task</button>
+        <select id="filter">
+            <option>all</option>
+            <option>pending</option>
+            <option>active</option>
+            <option>completed</option>
+        </select>
+        <button id="select">Select Task</button>
+        <div id="hidden" class="hidden">
+            <button id="delete">Delete</button>
+            <button id="update">Update</button>
+        </div>
+    </div>
+    <main id="container">
+        <div class="card">
+            <p>Task</p>
+            <p>Status</p>
+            <p>Created At</p>
+        </div>
+    </main>
+
+    <form id="taskForm" style="display: none;">
+        <p id="close">x</p>
+        <div class="form-container">
+            <input id="taskText" type="text" placeholder="Task">
+            <input id="addTask" type="submit" value="Add Task">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

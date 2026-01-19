@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Rock - Paper - Scissors</h1>
+        <div class="options">
+            <img alt="rock" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png">
+            <img alt="paper" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_%28paper%29.png">
+            <img alt="scissors" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_%28scissors%29.png">
+        </div>
+        <div class="output">
+            <div class="names">
+                <p>Player:</p>
+                <p>Computer:</p>
+            </div>
+            <div class="pick">
+                <p id="playerO">choosing..</p>
+                <p id="compO">choosing..</p>
+            </div>
+        </div>
+        <h1 id="outcome">...</h1>
+
+        <div class="leaderboards">
+            <h3 style="text-align: center; padding-left:3rem ;">leaderboards</h3>
+            <div class="row">
+                <p>Player Score:</p>
+                <p id="scoreP">0</p>
+            </div>
+            <div class="row">
+                <p>Computer Score:</p>
+                <p id="scoreC">0</p>
+            </div>
+            <div class="row">
+                <p>Ties:</p>
+                <p id="scoreT">0</p>
+            </div>
+        </div>
+        <button class="reset" onclick="reset()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
